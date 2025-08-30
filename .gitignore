@@ -1,0 +1,43 @@
+# Go build and dependency files
+/bin/
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+
+# Go workspace file
+*.code-workspace
+
+# Go modules
+/go.sum
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Certificates and keys
+*.pem
+*.key
+*.conf
+*.cnf
+
+# Proto generated files
+**/proto/gen/*.pb.go
+
+# Logs
+*.log
+
+*.env
+*.pem
+./gen
+
+# commands protoc -I=proto --go_out=. --go-grpc_out=. proto/main.proto proto/greeter.proto .\proto\farewell.proto

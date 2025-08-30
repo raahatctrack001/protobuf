@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Calculator;
+
+option go_package = "./proto/gen;proto_server";
+
+message GreetRequest {
+    string GreetRequestMessage = 1;
+}
+message GreetResponse {
+    string GreetResponseMessage = 1;
+}

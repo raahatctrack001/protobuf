@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+//filename
+package Calculator;
+
+import "greeter.proto";
+import "farewell.proto";
+
+option go_package="./proto/gen;proto_server";
+
+service Calculator {
+    rpc Add(AddInterger) returns (AddedInteger);
+}
+
+service GreeterService {
+    rpc Greet(GreetRequest) returns (GreetResponse);
+}
+
+service FarewellService {
+    rpc FarewellGreetings(FarewellRequestMessage) returns (FarewellResponseMessage);
+}
+
+
+message AddInterger{
+    int32 First = 1;
+    int32 Second = 2;
+}
+
+message AddedInteger{
+    int64 Result = 1;
+}

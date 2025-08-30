@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Calculator;
+
+option go_package = "./proto/gen;proto_server";
+
+message FarewellRequestMessage {
+    string Message = 1;
+}
+
+message FarewellResponseMessage {
+    string Message = 1;
+}
