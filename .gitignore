@@ -28,7 +28,7 @@ Thumbs.db
 *.pem
 *.key
 *.conf
-*.cnf
+# *.cnf
 
 # Proto generated files
 **/proto/gen/*.pb.go
